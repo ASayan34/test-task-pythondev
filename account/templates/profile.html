@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f1f1f1;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        p {
+            margin: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>User Profile</h1>
+        <p>Phone Number: {{ user.phone_number }}</p>
+        <p>Invite Code: {{ user.invite_code }}</p>
+        <p>Used Invite Code: {{ user_profile.used_invite_code }}</p>
+        <h2>Referrals:</h2>
+        <ul>
+            {% for referral in referrals %}
+                <li>{{ referral }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
