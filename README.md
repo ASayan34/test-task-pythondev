@@ -12,7 +12,7 @@
 ### To test our project
 cloning project:
 ```
-
+https://github.com/ASayan34/test-task-pythondev
 ```
 
 to start
@@ -39,7 +39,7 @@ python3 manage.py runserver
 ```
 
 ## API Allows
-- **Authorization** - 
+- **Authorization**
 - **View your own profile**
 - **Use someone's invite code**
 
